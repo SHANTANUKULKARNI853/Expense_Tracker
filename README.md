@@ -8,8 +8,6 @@ A simple and powerful full-stack **Expense Tracker** built using the **MERN stac
 ## 🚀 Live Demo
 
 - 🔗 Frontend: [https://expense-tracker-alpha-six-96.vercel.app](https://expense-tracker-alpha-six-96.vercel.app)
-- 🔗 Backend API: [your-render-backend-url](https://your-backend-render-url.com) *(replace with your actual Render backend URL)*
-
 ---
 
 ## 📦 Tech Stack
