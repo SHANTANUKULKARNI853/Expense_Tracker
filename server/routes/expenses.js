@@ -52,7 +52,7 @@ router.delete('/:id', authenticateToken, async (req, res) => {
       return res.status(404).json({ error: 'Expense not found or unauthorized' });
     }
 
-    await expense.remove();
+await Expense.findByIdAndDelete(id);
     res.json({ message: 'Expense deleted' });
   } catch (err) {
     console.error('Delete error:', err);
