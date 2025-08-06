@@ -19,7 +19,7 @@ function AuthCard({ onAuthSuccess }) {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', {
+      const res = await axios.post('https://expense-tracker-eu7z.onrender.com/api/auth/login', {
         email: form.email,
         password: form.password,
       });
@@ -35,7 +35,7 @@ function AuthCard({ onAuthSuccess }) {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/auth/signup', {
+      await axios.post('https://expense-tracker-eu7z.onrender.com/api/auth/signup', {
         name: form.name,
         email: form.email,
         password: form.password,

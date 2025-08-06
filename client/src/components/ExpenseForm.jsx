@@ -25,7 +25,7 @@ const ExpenseForm = ({ onAdd }) => {
 
   try {
     await axios.post(
-      'http://localhost:5000/api/expenses',
+      'https://expense-tracker-eu7z.onrender.com/api/expenses',
       {
         ...form,
         amount: Number(form.amount),

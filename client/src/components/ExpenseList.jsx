@@ -6,7 +6,7 @@ function ExpenseList({ expenses, onDelete }) {
   const handleDelete = async (id) => {
   const token = localStorage.getItem('token');
   try {
-    await axios.delete(`http://localhost:5000/api/expenses/${id}`, {
+    await axios.delete(`https://expense-tracker-eu7z.onrender.com/api/expenses/${id}`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },

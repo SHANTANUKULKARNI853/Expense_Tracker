@@ -18,7 +18,7 @@ function App() {
   const fetchExpenses = async () => {
     const token = localStorage.getItem('token');
     try {
-      const res = await axios.get('http://localhost:5000/api/expenses', {
+      const res = await axios.get('https://expense-tracker-eu7z.onrender.com/api/expenses', {
         headers: { Authorization: `Bearer ${token}` },
       });
       setExpenses(res.data);
