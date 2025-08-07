@@ -101,3 +101,40 @@
   cursor: pointer;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  .auth-card-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* prevent edge overflow */
+    box-sizing: border-box;
+  }
+
+  .auth-card {
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* control card width */
+    height: auto;
+  }
+
+  .auth-left,
+  .auth-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .auth-left {
+    text-align: center;
+  }
+
+  .auth-left h2 {
+    font-size: 20px;
+  }
+
+  .auth-right h3 {
+    font-size: 18px;
+  }
+}
+

@@ -81,3 +81,28 @@
     display: none; /* Or convert to top navbar */
   }
 }
+@media (max-width: 768px) {
+  .topbar {
+    left: 0; /* Remove sidebar offset */
+    padding: 0 12px; /* Reduce padding */
+    height: 50px; /* Optional: shrink height */
+    flex-direction: column; /* Optional: stack items vertically */
+    align-items: flex-start; /* Optional: align items to the left */
+    justify-content: center;
+  }
+
+  .topbar-title {
+    font-size: 20px;
+  }
+
+  .topbar-right {
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .logout-btn {
+    padding: 4px 10px;
+    font-size: 14px;
+  }
+}
+
